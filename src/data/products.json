@@ -1,0 +1,112 @@
+[
+  {
+    "_id": 1,
+    "title": "producto1",
+    "description": "Descripcion producto1",
+    "code": "0001",
+    "price": 100,
+    "status": true,
+    "stock": 11,
+    "category": "category1",
+    "thumbnail": ["Sin imagen1"]
+  },
+  {
+    "_id": 2,
+    "title": "producto2",
+    "description": "Descripcion producto2",
+    "code": "0002",
+    "price": 200,
+    "status": true,
+    "stock": 22,
+    "category": "category2",
+    "thumbnail": ["Sin imagen2"]
+  },
+  {
+    "_id": 3,
+    "title": "producto3",
+    "description": "Descripcion producto3",
+    "code": "0003",
+    "price": 300,
+    "status": true,
+    "stock": 33,
+    "category": "category3",
+    "thumbnail": ["Sin imagen3"]
+  },
+  {
+    "_id": 4,
+    "title": "producto4",
+    "description": "Descripcion producto4",
+    "code": "0004",
+    "price": 400,
+    "status": true,
+    "stock": 44,
+    "category": "category1",
+    "thumbnail": ["Sin imagen4"]
+  },
+  {
+    "_id": 5,
+    "title": "producto5",
+    "description": "Descripcion producto5",
+    "code": "0005",
+    "price": 500,
+    "status": true,
+    "stock": 55,
+    "category": "category2",
+    "thumbnail": ["Sin imagen5"]
+  },
+  {
+    "_id": 6,
+    "title": "producto6",
+    "description": "Descripcion producto6",
+    "code": "0006",
+    "price": 600,
+    "status": true,
+    "stock": 66,
+    "category": "category3",
+    "thumbnail": ["Sin imagen6"]
+  },
+  {
+    "_id": 7,
+    "title": "producto7",
+    "description": "Descripcion producto7",
+    "code": "0007",
+    "price": 700,
+    "status": true,
+    "stock": 77,
+    "category": "category1",
+    "thumbnail": ["Sin imagen7"]
+  },
+  {
+    "_id": 8,
+    "title": "producto8",
+    "description": "Descripcion producto8",
+    "code": "0008",
+    "price": 800,
+    "status": true,
+    "stock": 88,
+    "category": "category2",
+    "thumbnail": ["Sin imagen8"]
+  },
+  {
+    "_id": 9,
+    "title": "producto9",
+    "description": "Descripcion producto9",
+    "code": "0009",
+    "price": 900,
+    "status": true,
+    "stock": 99,
+    "category": "category3",
+    "thumbnail": ["Sin imagen9"]
+  },
+  {
+    "_id": 10,
+    "title": "producto10",
+    "description": "Descripcion producto10",
+    "code": "0010",
+    "price": 1000,
+    "status": true,
+    "stock": 1010,
+    "category": "category1",
+    "thumbnail": ["Sin imagen10"]
+  }
+]

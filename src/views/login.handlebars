@@ -1,0 +1,37 @@
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+      <h1>Login</h1>
+      <form id="loginForm">
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+            name="email"
+          />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Email"
+            name="password"
+          />
+          <label for="password">Password</label>
+        </div>
+        <button class="btn btn-outline-primary">Login</button>
+      </form>
+      <p>Are you not registered?
+        <a class="px-2" href="/register">Register</a></p>
+
+      <a class="d-block mt-2" href="/api/sessions/github"><button
+          class="btn btn-info"
+        >Login with github</button></a>
+    </div>
+  </div>
+</div>
+<script src="/js/login.js"></script>

@@ -1,0 +1,65 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <ul class="list-group my-3">
+        <li class="list-group-item active">Welcome {{user.first_name}}!!!</li>
+        <li class="list-group-item">Email: {{user.email}}</li>
+        <li class="list-group-item">Age: {{user.age}}</li>
+        <li class="list-group-item">Rol: {{user.role}}</li>
+      </ul>
+    </div>
+    <div class="col-12">
+      <h2>List of Products</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Category</th>
+              <th scope="col">Price</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="tbody-products">
+            {{#each response.payload}}
+              <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.category}}</td>
+                <td>{{this.price}}</td>
+                <td>
+                  <a href="/products/{{this._id}}"><button
+                      class="btn btn-info"
+                    >Detalle</button></a>
+                </td>
+                <td>
+                  <button
+                    class="btn btn-success"
+                    onclick="addToCart('{{../user.cart}}','{{this._id}}')"
+                  >Agregar a carrito</button>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center my-3">
+        {{#if response.hasPrevPage}}
+          <a href="{{response.prevLink}}"><button
+              class="btn btn-outline-dark me-3"
+            > << Prev</button></a>
+        {{else}}
+          <button disabled class="btn btn-outline-dark">Prev</button>
+        {{/if}}
+        {{#if response.hasNextPage}}
+          <a href="{{response.nextLink}}"><button
+              class="btn btn-outline-dark"
+            >Next >></button></a>
+        {{else}}
+          <button disabled class="btn btn-outline-dark">Next</button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

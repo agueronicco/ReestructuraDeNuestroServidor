@@ -1,0 +1,91 @@
+<div class="container">
+  <h1>Real Time Products</h1>
+  <div class="row">
+
+    <div class="col-6">
+      <h2>Agregar Producto</h2>
+
+      <form id="formAddProduct" class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label" for="title">Titulo</label>
+          <input class="form-control" type="text" id="title" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label" for="description">Descripcion</label>
+          <input class="form-control" type="text" id="description" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label" for="code">Codigo</label>
+          <input class="form-control" type="text" id="code" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label" for="price">Precio</label>
+          <input class="form-control" type="number" id="price" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label" for="stock">Stock</label>
+          <input class="form-control" type="number" id="stock" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label" for="category">Categoria</label>
+          <input class="form-control" type="text" id="category" />
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-primary" id="addProduct">Agregar</button>
+        </div>
+
+      </form>
+
+    </div>
+    <div class="col-6">
+      <h2>Borrar Producto</h2>
+      <form id="formDeleteProduct" class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label" for="productId">Ingrese ID producto</label>
+          <input class="form-control" type="text" id="productId" />
+        </div>
+        <div class="col-md-12">
+          <button class="btn btn-danger" id="deleteProduct">Borrar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2>Lista de productos</h2>
+      <div id="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">_id</th>
+              <th scope="col">title</th>
+              <th scope="col">description</th>
+              <th scope="col">code</th>
+              <th scope="col">price</th>
+              <th scope="col">status</th>
+              <th scope="col">category</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-products">
+            {{#each products}}
+              <tr>
+                <td>{{this._id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.code}}</td>
+                <td>{{this.price}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.category}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>

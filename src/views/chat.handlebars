@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h1 class="text-center">Chat Ecommerce</h1>
+  <div class="row">
+    <div class="col-4">
+      <h3>User: <span id="userName"></span> </h3>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="chatbox" />
+        <label for="chatbox">Message</label>
+      </div>
+    </div>
+    <div class="col-8" id="messageLogs">
+
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+  integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="/js/chat.js"></script>
